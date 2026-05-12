@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/probberechts
+projects_url: https://www.axekin.com
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -15,9 +15,6 @@ direction: ltr
 # languages/*.yml
 nav:
   home: /
-  about: /about/
-  articles: /archives/
-  projects: http://github.com/probberechts
 
 
 # Links to your social media accounts.
@@ -26,27 +23,27 @@ nav:
 # only 'mail' is an exception.
 # You can optionally add a 'label' key to set the title attribute on the link. 
 # 'icon' value will be used as title when 'label' is missing.
-social_links:
-  -
-    icon: github
-    link: http://github.com/probberechts/cactus-dark
-  -
-    icon: twitter
-    link: /
-  -
-    icon: facebook
-    link: /
-  -
-    icon: mail
-    link: mailto:name@email.com
-  -
-    icon: mastodon
-    label: mastodon.social
-    link: https://mastodon.social/@alice
-  -
-    icon: mastodon
-    label: fosstodon.org
-    link: https://fosstodon.org/@alice
+# social_links:
+#   -
+#     icon: github
+#     link: http://github.com/probberechts/cactus-dark
+#   -
+#     icon: twitter
+#     link: /
+#   -
+#     icon: facebook
+#     link: /
+#   -
+#     icon: mail
+#     link: mailto:name@email.com
+#   -
+#     icon: mastodon
+#     label: mastodon.social
+#     link: https://mastodon.social/@alice
+#   -
+#     icon: mastodon
+#     label: fosstodon.org
+#     link: https://fosstodon.org/@alice
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -206,7 +203,7 @@ umami_analytics:
 # logo and/or favicons of you website.
 # To generate hash: `$ echo -n "name@email.com" | md5`.
 gravatar:
-  email: name@email.com
+  email: axekin.quotable791@passmail.net
   hash: d41d8cd98f00b204e9800998ecf8427e
 
 # loads libraries and styles from CDN instead or relying on local files

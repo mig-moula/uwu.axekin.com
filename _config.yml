@@ -7,7 +7,7 @@ title: FTP and Torrent access for Axekin content.
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Axekin
 language: en
 timezone: ''
 
@@ -102,3 +102,21 @@ theme: cactus
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Homepage presentation blocks
+homepage:
+  project_presentation: >-
+    Welcome to Axekin's content access page! Here, you can find various resources and links to access our content through FTP and Torrent. Whether you're looking for the latest updates, exclusive materials, or just want to explore our offerings, we've got you covered. Browse through the categories below to find the content that interests you the most. Happy exploring!
+  ftp:
+    user: user
+    pass: pass
+  torrent:
+    categories:
+      - name: Films
+        links:
+          - label: Telecharger Film Exemple
+            url: "magnet:?xt=urn:btih:EXEMPLEFILM123"
+      - name: Series
+        links:
+          - label: Telecharger Serie Exemple
+            url: "magnet:?xt=urn:btih:EXEMPLESERIE456"
