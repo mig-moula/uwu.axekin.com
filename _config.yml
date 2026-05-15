@@ -29,6 +29,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - index.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -60,7 +61,7 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: blog
   per_page: 10
   order_by: -date
 
@@ -103,20 +104,3 @@ theme: cactus
 deploy:
   type: ''
 
-# Homepage presentation blocks
-homepage:
-  project_presentation: >-
-    Welcome to Axekin's content access page! Here, you can find various resources and links to access our content through FTP and Torrent. Whether you're looking for the latest updates, exclusive materials, or just want to explore our offerings, we've got you covered. Browse through the categories below to find the content that interests you the most. Happy exploring!
-  ftp:
-    user: user
-    pass: pass
-  torrent:
-    categories:
-      - name: Films
-        links:
-          - label: Telecharger Film Exemple
-            url: "magnet:?xt=urn:btih:EXEMPLEFILM123"
-      - name: Series
-        links:
-          - label: Telecharger Serie Exemple
-            url: "magnet:?xt=urn:btih:EXEMPLESERIE456"

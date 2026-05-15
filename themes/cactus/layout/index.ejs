@@ -32,53 +32,6 @@
   <% } %>
 </section>
 
-<% const homepage = config.homepage || {}; %>
-<% const ftpAccess = homepage.ftp || {}; %>
-<% const torrentAccess = homepage.torrent || {}; %>
-<% const torrentCategories = torrentAccess.categories || []; %>
-<section id="site-presentation" class="home-card">
-  <span class="h1">Credits/login</span>
-  <div class="home-description">
-    <% if (homepage.project_presentation) { %>
-      <%- markdown(homepage.project_presentation) %>
-    <% } else { %>
-      <p>Add ur presentation in <code>homepage.project_presentation</code> of conf file.</p>
-    <% } %>
-  </div>
-
-  <div class="access-grid">
-    <article class="access-block">
-      <span class="h2">Access FTP</span>
-      <p>ID:</p>
-      <p class="credentials"><strong><%= ftpAccess.user || 'user' %>:<%= ftpAccess.pass || 'pass' %></strong></p>
-    </article>
-
-    <article class="access-block">
-      <span class="h2">Access Torrent</span>
-      <% if (torrentCategories.length) { %>
-        <% torrentCategories.forEach(function(category) { %>
-          <div class="torrent-category">
-            <p class="torrent-category-title"><strong><%= category.name %></strong></p>
-            <% if (category.links && category.links.length) { %>
-              <ul class="torrent-links">
-                <% category.links.forEach(function(link) { %>
-                  <li>
-                    <a href="<%- link.url %>" target="_blank" rel="noopener"><%= link.label || link.url %></a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } else { %>
-              <p>No link in this category.</p>
-            <% } %>
-          </div>
-        <% }) %>
-      <% } else { %>
-        <p>Add category in <code>homepage.torrent.categories</code> of conf file.</p>
-      <% } %>
-    </article>
-  </div>
-</section>
-
 <section id="writing">
   <span class="h1"><a href="<%- url_for(theme.nav.articles) %>"><%= __('index.articles') %></a></span>
   <% if (theme.tags_overview && site.tags.length) { %>
